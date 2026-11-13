@@ -29,6 +29,8 @@ Le projet est en phase de planification. Les fonctionnalités et technologies ci
 
 Le [plan complet de développement](docs/PLANNING.md) présente l'architecture, les exigences, les tests, les jalons et une répartition de travail 50/50 sur deux développeurs.
 
+Le [plan microservices](docs/PLANNING-MICROSERVICES.md) en est la variante pour un travail séparé des deux développeurs : services par propriétaire, contrats consommateur, budget et calendrier sur 16 semaines.
+
 ## Contributeurs
 
 - **BAGHDAD Mohamed**
