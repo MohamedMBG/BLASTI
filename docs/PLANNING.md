@@ -8,6 +8,8 @@
 **Équipe de référence :** binôme, Développeur 1 (D1) et Développeur 2 (D2)  
 **Statut :** proposition de réalisation et de CDC détaillé à valider en S2.
 
+> **Mise à jour :** une variante en microservices avec travail séparé des deux développeurs est décrite dans [`PLANNING-MICROSERVICES.md`](PLANNING-MICROSERVICES.md). Elle remplace l’architecture, la répartition et le calendrier de ce document (§1, §6, §12.2, §16, §18.3, §22) ; ce document reste la référence du CDC (E01–E25, D01–D12, R01–R26) et des règles métier.
+
 ## 1. Décisions retenues et répartition 50/50
 
 **Deux applications mobiles en Flutter/Dart : une application client et une application chauffeur, avec une base de code partagée et deux flavors.** Ce choix suit la stack mobile suggérée dans la présentation. Le serveur reste en Java/Spring Boot : Flutter prend en charge les interfaces mobiles, tandis que le serveur garantit les réservations, les droits et les places disponibles.
@@ -68,7 +70,7 @@ Le noyau S7 est un jalon intermédiaire. Il ne représente pas à lui seul la co
 
 ### Extensions hors engagement initial
 
-Paiement en ligne, livraison iOS signée et testée, tarification dynamique, portefeuille, SMS payant, navigation vocale développée sur mesure, réservation avec correspondance entre deux taxis, détour arbitraire hors ligne, microservices et Kubernetes. Le sujet permet de limiter les trajets croisés aux lignes partageant un tronçon : cette variante est incluse dans la version complète, et doit apparaître dans le CDC validé.
+Paiement en ligne, livraison iOS signée et testée, tarification dynamique, portefeuille, SMS payant, navigation vocale développée sur mesure, réservation avec correspondance entre deux taxis, détour arbitraire hors ligne et Kubernetes. Les microservices sont traités dans `PLANNING-MICROSERVICES.md`. Le sujet permet de limiter les trajets croisés aux lignes partageant un tronçon : cette variante est incluse dans la version complète, et doit apparaître dans le CDC validé.
 
 ## 3. Analyse à réaliser avant de figer le CDC
 
